@@ -37,10 +37,11 @@ label2 = tk.Label(root, text = "Test Label top", fg = darkText, bg = darkBackgro
 """
     This is a random button that I added that does not do anything.
 """
-tk.Button(root, text = "Click me").pack(pady = 10)
+Button = tk.Button(root, text = "Click me")
 
 label2.pack(pady = 10)
 label.pack(pady = 10)
+Button.pack(pady = 10)
 
 """
     So I threw in some arbitrary values to see if that would atleast get the program to run and it did. So this works for now.
