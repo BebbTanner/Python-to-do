@@ -1,3 +1,10 @@
+"""
+    So, if I remember correctly, everything in a tkinter window is displayed via a label.
+    I do not remember exactly how, but I know in order to use functions that update they need to be passed to a label in a really stupid way.
+    I think that I will have to review my previous alarm clock project to see if I can figure it out.
+"""
+
+
 import tkinter as tk
 
 root = tk.Tk()
