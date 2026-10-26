@@ -2,6 +2,10 @@
     So, if I remember correctly, everything in a tkinter window is displayed via a label.
     I do not remember exactly how, but I know in order to use functions that update they need to be passed to a label in a really stupid way.
     I think that I will have to review my previous alarm clock project to see if I can figure it out.
+
+    What all am I looking to put on the window?
+    I think that I want to create some type of to do list.
+    I would then like to be able to add some type of function that would generate this as pdf report.
 """
 
 
