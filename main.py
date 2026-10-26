@@ -18,6 +18,11 @@ darkWdiget = "#2d2d2d"
 root = tk.Tk()
 root.title("To Do List")
 
+"""
+    This will configure the window to have the values that I have defined above.
+"""
+root.configure(bg=darkBackground)
+
 label = tk.Label(root, text = "Test Label", font = ("Arial", 16))
 
 label.pack(pady = 20)
