@@ -23,9 +23,11 @@ root.title("To Do List")
 """
 root.configure(bg=darkBackground)
 
-label = tk.Label(root, text = "Test Label", font = ("Arial", 16))
+label = tk.Label(root, text = "Test Label bottom", font = ("Arial", 16))
+label2 = tk.Label(root, text = "Test Label top", font = ("Arial", 16))
 
-label.pack(pady = 20)
+label2.pack(pady = 10)
+label.pack(pady = 10)
 
 """
     So I threw in some arbitrary values to see if that would atleast get the program to run and it did. So this works for now.
@@ -33,7 +35,7 @@ label.pack(pady = 20)
 
     This is a window with predefined dimensions.
 """
-root.geometry("400x300")
+root.geometry("600x500")
 
 """
     This in theory should center the window on the screen. Spoiler, it does not however, It does reposition the window once it has been created.
