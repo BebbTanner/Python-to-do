@@ -27,6 +27,10 @@ root.title("To Do List")
 """
 root.configure(bg=darkBackground)
 
+
+"""
+    There are my two labels that display some text that I am just playing aroud with.
+"""
 label = tk.Label(root, text = "Test Label bottom", fg = darkText, bg = darkBackground, font = ("Arial", 16))
 label2 = tk.Label(root, text = "Test Label top", fg = darkText, bg = darkBackground, font = ("Arial", 16))
 
