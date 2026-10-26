@@ -1,13 +1,11 @@
-import tkinter as tk 
-from tkinter import messagebox
-import datetime
-import time
+
+import tkinter as tk
 
 root = tk.Tk()
-root.title("Test")
+root.title("Alarm Clock")
 
-root.geometry("400x400")
-
-label = tk.Label(root, text = "Test window", font = "Arial 12")
-
-root.mainloop
+"""
+    This is calling the mainloop function. This should compile everything used for 
+the main loop.
+"""
+root.mainloop()
