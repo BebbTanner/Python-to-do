@@ -45,6 +45,7 @@ Entry.pack(pady = 10, padx = 10, fill=tk.X)
 addButton = tk.Button(root, text = "Add item", command = addItem)
 addButton.pack(pady = 10, padx = 10, fill=tk.X)
 
-
+listBox = tk.Listbox(root)
+listBox.pack(pady = 10, padx = 10, fill=tk.X, expand=True)
 
 root.mainloop()
