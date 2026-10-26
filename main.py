@@ -39,7 +39,7 @@ label.pack(pady = 10)
 
     This is a window with predefined dimensions.
 """
-root.geometry("600x500")
+root.geometry("900x500")
 
 """
     This in theory should center the window on the screen. Spoiler, it does not however, It does reposition the window once it has been created.
