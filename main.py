@@ -10,7 +10,7 @@
 
 
 import tkinter as tk
-from tkinter import ttk
+from tkinter import Entry, Listbox, ttk
 
 """
     I have tried adding different coloration to the items and this did absolutely fuck all.
@@ -20,6 +20,18 @@ cyberRed = "#c5003c"
 cyberMaroon = "#880425"
 cyberYellow = "#FFD300"
 cyberBlue = "#00aeff"
+
+
+
+"""
+    This is a function that will allow users to add items to the list.
+"""
+def addItem():
+    newItem = Entry.get()
+
+    if newItem:
+        Listbox.insert(tk.END, newItem)
+        Entry.delete(0, tk.END)
 
 root = tk.Tk()
 root.title("To Do List")
