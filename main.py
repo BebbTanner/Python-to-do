@@ -42,7 +42,8 @@ root.configure(bg=cyberBlack)
 Entry = tk.Entry(root)
 Entry.pack(pady = 10, padx = 10, fill=tk.X)
 
-
+addButton = tk.Button(root, text = "Add item", command = addItem)
+addButton.pack(pady = 10, padx = 10, fill=tk.X)
 
 
 
