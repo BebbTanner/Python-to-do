@@ -35,28 +35,15 @@ def addItem():
 
 root = tk.Tk()
 root.title("To Do List")
-
-"""
-    This will configure the window to have the values that I have defined above.
-"""
+root.geometry("900x500")
+root.eval('tk::PlaceWindow . center')
 root.configure(bg=cyberBlack)
 
-"""
-    So I threw in some arbitrary values to see if that would atleast get the program to run and it did. So this works for now.
-    But, it does not center in the screen as intended.
+Entry = tk.Entry(root)
+Entry.pack(pady = 10, padx = 10, fill=tk.X)
 
-    This is a window with predefined dimensions.
-"""
-root.geometry("900x500")
 
-"""
-    This in theory should center the window on the screen. Spoiler, it does not however, It does reposition the window once it has been created.
-    So that's atleast a step up from it just appearing the in corner of the screen.
-"""
-root.eval('tk::PlaceWindow . center')
 
-"""
-    This is calling the mainloop function. This should compile everything used for 
-the main loop.
-"""
+
+
 root.mainloop()
