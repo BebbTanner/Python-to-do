@@ -18,10 +18,8 @@ from tkinter import Entry, Listbox, ttk
 cyberBlack = "#000000"
 cyberRed = "#c5003c"
 cyberMaroon = "#880425"
-cyberYellow = "#FFD300"
+cyberYellow = "#FFD700"
 cyberBlue = "#00aeff"
-
-
 
 """
     This is a function that will allow users to add items to the list.
