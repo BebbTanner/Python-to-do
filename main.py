@@ -6,6 +6,14 @@
 
 
 import tkinter as tk
+from tkinter import ttk
+
+"""
+    I have tried adding different coloration to the items and this did absolutely fuck all.
+"""
+darkBackground = "#1c1c1c"
+darkText = "#ffffff"
+darkWdiget = "#2d2d2d"
 
 root = tk.Tk()
 root.title("To Do List")
@@ -17,6 +25,8 @@ label.pack(pady = 20)
 """
     So I threw in some arbitrary values to see if that would atleast get the program to run and it did. So this works for now.
     But, it does not center in the screen as intended.
+
+    This is a window with predefined dimensions.
 """
 root.geometry("400x300")
 
