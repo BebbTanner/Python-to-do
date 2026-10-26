@@ -15,9 +15,9 @@ from tkinter import ttk
 """
     I have tried adding different coloration to the items and this did absolutely fuck all.
 """
-darkBackground = "#1c1c1c"
-darkText = "#ffffff"
-darkWdiget = "#2d2d2d"
+cyberBlack = "#000000"
+cyberRed = "#c5003c"
+cyberMaroon = "#880425"
 cyberYellow = "#FFD300"
 cyberBlue = "#00aeff"
 
@@ -27,14 +27,14 @@ root.title("To Do List")
 """
     This will configure the window to have the values that I have defined above.
 """
-root.configure(bg=darkBackground)
+root.configure(bg=cyberBlack)
 
 
 """
     There are my two labels that display some text that I am just playing aroud with.
 """
-label = tk.Label(root, text = "Test Label bottom", fg = darkText, bg = darkBackground, font = ("Arial", 16))
-label2 = tk.Label(root, text = "Test Label top", fg = darkText, bg = darkBackground, font = ("Arial", 16))
+label = tk.Label(root, text = "Test Label bottom", bg = cyberYellow, fg = cyberBlue, font = ("Arial", 16))
+label2 = tk.Label(root, text = "Test Label top", bg = cyberYellow, fg = cyberBlue, font = ("Arial", 16))
 
 """
     This is a random button that I added that does not do anything.
