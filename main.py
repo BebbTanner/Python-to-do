@@ -34,6 +34,11 @@ root.configure(bg=darkBackground)
 label = tk.Label(root, text = "Test Label bottom", fg = darkText, bg = darkBackground, font = ("Arial", 16))
 label2 = tk.Label(root, text = "Test Label top", fg = darkText, bg = darkBackground, font = ("Arial", 16))
 
+"""
+    This is a random button that I added that does not do anything.
+"""
+tk.Button(root, text = "Click me").pack(pady = 10)
+
 label2.pack(pady = 10)
 label.pack(pady = 10)
 
