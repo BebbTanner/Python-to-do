@@ -29,25 +29,6 @@ root.title("To Do List")
 """
 root.configure(bg=cyberBlack)
 
-
-"""
-    There are my two labels that display some text that I am just playing aroud with.
-"""
-label = tk.Label(root, text = "Test Label bottom", bg = cyberYellow, fg = cyberBlue, font = ("Arial", 16))
-label2 = tk.Label(root, text = "Test Label top", bg = cyberYellow, fg = cyberBlue, font = ("Arial", 16))
-
-"""
-    This is a random button that I added that does not do anything.
-"""
-Button = tk.Button(root, text = "Click me", bg = cyberYellow, fg = cyberBlue, activebackground = "#55ead4", activeforeground = "#c5003c")
-
-"""
-    The order in which the widgets are packed determines their placement on the window.
-"""
-label2.pack(pady = 10)
-label.pack(pady = 10)
-Button.pack(pady = 10)
-
 """
     So I threw in some arbitrary values to see if that would atleast get the program to run and it did. So this works for now.
     But, it does not center in the screen as intended.
