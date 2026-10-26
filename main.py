@@ -18,6 +18,8 @@ from tkinter import ttk
 darkBackground = "#1c1c1c"
 darkText = "#ffffff"
 darkWdiget = "#2d2d2d"
+cyberYellow = "#FFD700"
+cyberBlue = "#00aeff"
 
 root = tk.Tk()
 root.title("To Do List")
@@ -37,7 +39,7 @@ label2 = tk.Label(root, text = "Test Label top", fg = darkText, bg = darkBackgro
 """
     This is a random button that I added that does not do anything.
 """
-Button = tk.Button(root, text = "Click me", bg = "#FFD700", fg = "#00aeff")
+Button = tk.Button(root, text = "Click me", bg = cyberYellow, fg = cyberBlue)
 
 """
     The order in which the widgets are packed determines their placement on the window.
