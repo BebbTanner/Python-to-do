@@ -39,6 +39,9 @@ label2 = tk.Label(root, text = "Test Label top", fg = darkText, bg = darkBackgro
 """
 Button = tk.Button(root, text = "Click me")
 
+"""
+    The order in which the widgets are packed determines their placement on the window.
+"""
 label2.pack(pady = 10)
 label.pack(pady = 10)
 Button.pack(pady = 10)
