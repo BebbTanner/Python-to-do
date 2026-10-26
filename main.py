@@ -10,8 +10,8 @@ label.pack(pady = 20)
 """
     These are two varibles that will get the window a preset width and height.
 """
-windowWidth = 400
-windowHeight = 300
+windowWidth = 100
+windowHeight = 100
 
 """
     These are two preset functions that will detect the width and the height of the user's screen.
@@ -24,6 +24,11 @@ screenHeight = root.winfo_screenheight()
 """
 centerX = int(screenWidth/2 - windowWidth/2)
 centerY = int(screenHeight/2 - windowHeight/2)
+
+"""
+
+"""
+root.geometry(f'{windowWidth}*{windowHeight}+{centerX}+{centerY}')
 
 """
     This is calling the mainloop function. This should compile everything used for 
