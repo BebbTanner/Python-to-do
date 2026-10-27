@@ -12,38 +12,35 @@
 import tkinter as tk
 from tkinter import Entry, Listbox, ttk
 
-"""
-    I have tried adding different coloration to the items and this did absolutely fuck all.
-"""
 cyberBlack = "#000000"
 cyberRed = "#c5003c"
 cyberMaroon = "#880425"
 cyberYellow = "#FFD700"
 cyberBlue = "#00aeff"
 
-"""
-    This is a function that will allow users to add items to the list.
-"""
-def addItem():
-    newItem = Entry.get()
-
-    if newItem:
-        Listbox.insert(tk.END, newItem)
-        Entry.delete(0, tk.END)
+def display_text():
+    # 1. Retrieve the text string from the Entry widget
+    user_input = entry.get()
+    
+    # 2. Update the Label widget with the user's string
+    output_label.config(text=f"You typed: {user_input}")
 
 root = tk.Tk()
+root.title("User Input Example")
+root.geometry("400x200")
+
+entry = tk.Entry(root, width=30)
+entry.pack(pady=10)
+
+submit_button = tk.Button(root, text="Display Text", command=display_text)
+submit_button.pack(pady=5)
+
+output_label = tk.Label(root, text="", font=("Arial", 12))
+output_label.pack(pady=20)
+
 root.title("To Do List")
 root.geometry("900x500")
 root.eval('tk::PlaceWindow . center')
 root.configure(bg=cyberBlack)
-
-Entry = tk.Entry(root)
-Entry.pack(pady = 10, padx = 10, fill=tk.X)
-
-addButton = tk.Button(root, text = "Add item", command = addItem)
-addButton.pack(pady = 10, padx = 10, fill=tk.X)
-
-listBox = tk.Listbox(root)
-listBox.pack(pady = 10, padx = 10, fill=tk.X, expand=True)
 
 root.mainloop()
