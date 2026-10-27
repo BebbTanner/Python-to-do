@@ -23,11 +23,9 @@ def display_text():
     user_input = entry.get()
     
     # 2. Update the Label widget with the user's string
-    output_label.config(text=f"You typed: {user_input}")
+    output_label.config(text=f"You typed: {user_input}", bg = cyberMaroon, fg = cyberBlue)
 
 root = tk.Tk()
-root.title("User Input Example")
-root.geometry("400x200")
 
 entry = tk.Entry(root, width=30)
 entry.pack(pady=10)
