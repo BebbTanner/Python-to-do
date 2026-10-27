@@ -51,7 +51,7 @@ def generate_listbox_with_input():
     root.title("To Do List")
     root.geometry("900x500")
     root.eval('tk::PlaceWindow . center')
-    root.configure(bg=cyberBlack)
+    root.configure(bg=cyberYellow)
     
     # Frame for input controls
     input_frame = tk.Frame(root, bg = cyberYellow)
