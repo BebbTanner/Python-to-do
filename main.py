@@ -24,13 +24,6 @@ import tkinter as tk
 from tkinter import *
 from tkinter import messagebox
 
-# Primary color palette?
-cyberBlack = "#000000"
-cyberRed = "#c5003c"
-cyberMaroon = "#880425"
-cyberYellow = "#FFD700"
-cyberBlue = "#00aeff"
-
 # Secondary color palette
 yellow = "#efffa0"
 skyBlue = "#a4e8eb"
