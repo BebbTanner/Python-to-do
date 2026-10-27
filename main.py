@@ -89,8 +89,8 @@ def generate_listbox_with_input():
     button_frame = tk.Frame(root)
     button_frame.pack(pady=5)
     
-    tk.Button(button_frame, text="Add", bg = cyberMaroon, fg = cyberBlue, command=add_item).pack(side=tk.LEFT, padx=5)
-    tk.Button(button_frame, text="Remove", bg = cyberMaroon, fg = cyberBlue, command=remove_item).pack(side=tk.LEFT, padx=5)
+    tk.Button(button_frame, text="Add", bg = cyberMaroon, fg = cyberBlue, activebackground = cyberYellow, activeforeground = cyberBlue, command=add_item).pack(side=tk.LEFT, padx=5)
+    tk.Button(button_frame, text="Remove", bg = cyberMaroon, fg = cyberBlue, activebackground = cyberYellow, activeforeground = cyberBlue, command=remove_item).pack(side=tk.LEFT, padx=5)
     
     # Bind Enter key to add function
     entry.bind('<Return>', lambda event: add_item())
