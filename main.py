@@ -60,14 +60,14 @@ def generate_listbox_with_input():
     root.title("To Do List")
     root.geometry("900x500")
     root.eval('tk::PlaceWindow . center')
-    root.configure()
+    root.configure(bg = lightGray)
     
     # Frame for input controls
-    input_frame = tk.Frame(root)
+    input_frame = tk.Frame(root, bg = skyBlue)
     input_frame.pack(pady=10)
     
-    tk.Label(input_frame, text="Add Item:").pack(side=tk.LEFT)
-    entry = tk.Entry(input_frame, width=20)
+    tk.Label(input_frame, text="Add Item:", bg = skyBlue).pack(side=tk.LEFT)
+    entry = tk.Entry(input_frame, width=20, bg = yellow)
     entry.pack(side=tk.LEFT, padx=5)
     
     # Create listbox with scrollbar
@@ -99,11 +99,11 @@ def generate_listbox_with_input():
             messagebox.showwarning("Warning", "Please select an item to remove!")
     
     # button_frame is the box that the add and remove buttons will be placed in. I have managed to set its background color to cyberRed.
-    button_frame = tk.Frame(root)
+    button_frame = tk.Frame(root, bg = skyBlue)
     button_frame.pack(pady=5)
     
-    tk.Button(button_frame, text="Add", command=add_item).pack(side=tk.LEFT, padx=5)
-    tk.Button(button_frame, text="Remove", command=remove_item).pack(side=tk.LEFT, padx=5)
+    tk.Button(button_frame, text="Add", bg = yellow, command=add_item).pack(side=tk.LEFT, padx=5)
+    tk.Button(button_frame, text="Remove", bg = yellow, command=remove_item).pack(side=tk.LEFT, padx=5)
     
     # Bind Enter key to add function
     entry.bind('<Return>', lambda event: add_item())
