@@ -35,15 +35,10 @@ def generate_listbox_with_input():
     # This is defining the winow that will allow me to place objects within that window that I have labeled root.
     root = tk.Tk()
 
-    # Here are my widgets that I have defined for the window. I will add more to this documentation later.
+    # Here are my widgets that I have defined, but I removed the packing for now. So if I want to display these again I will need to repack them into my root window.
     entry = tk.Entry(root, width=30)
     submit_button = tk.Button(root, text="Display Text", command=display_text, bg = cyberMaroon, fg = cyberBlue, activebackground = cyberYellow, activeforeground = cyberBlue) 
     output_label = tk.Label(root, text="", font=("Arial", 12))
-
-    # Here is all of the widgets that are being packed into the window. these will be displayed in the order that they are packed in.
-    entry.pack(pady=10)
-    submit_button.pack(pady=5)
-    output_label.pack(pady=20)
 
     # Here is the sizing of the window and other configurations. 
     root.title("To Do List")
@@ -96,7 +91,7 @@ def generate_listbox_with_input():
     
     # Bind Enter key to add function
     entry.bind('<Return>', lambda event: add_item())
-    
+
     root.mainloop()
 
 # I still have no got damned idea as to what the fuck this does.
