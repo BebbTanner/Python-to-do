@@ -46,27 +46,27 @@ def generate_listbox_with_input():
         user_input = entry.get()
         
         # 2. Update the Label widget with the user's string
-        output_label.config(text=f"You typed: {user_input}", bg = cyberMaroon, fg = cyberBlue)
+        output_label.config(text=f"You typed: {user_input}")
 
     # This is defining the winow that will allow me to place objects within that window that I have labeled root.
     root = tk.Tk()
 
     # Here are my widgets that I have defined, but I removed the packing for now. So if I want to display these again I will need to repack them into my root window.
     entry = tk.Entry(root, width=30)
-    submit_button = tk.Button(root, text="Display Text", command=display_text, bg = cyberMaroon, fg = cyberBlue, activebackground = cyberYellow, activeforeground = cyberBlue) 
+    submit_button = tk.Button(root, text="Display Text", command=display_text) 
     output_label = tk.Label(root, text="", font=("Arial", 12))
 
     # Here is the sizing of the window and other configurations. 
     root.title("To Do List")
     root.geometry("900x500")
     root.eval('tk::PlaceWindow . center')
-    root.configure(bg=cyberYellow)
+    root.configure()
     
     # Frame for input controls
-    input_frame = tk.Frame(root, bg = cyberYellow)
+    input_frame = tk.Frame(root)
     input_frame.pack(pady=10)
     
-    tk.Label(input_frame, text="Add Item:", bg = cyberYellow).pack(side=tk.LEFT)
+    tk.Label(input_frame, text="Add Item:").pack(side=tk.LEFT)
     entry = tk.Entry(input_frame, width=20)
     entry.pack(side=tk.LEFT, padx=5)
     
@@ -99,11 +99,11 @@ def generate_listbox_with_input():
             messagebox.showwarning("Warning", "Please select an item to remove!")
     
     # button_frame is the box that the add and remove buttons will be placed in. I have managed to set its background color to cyberRed.
-    button_frame = tk.Frame(root, bg = cyberYellow)
+    button_frame = tk.Frame(root)
     button_frame.pack(pady=5)
     
-    tk.Button(button_frame, text="Add", bg = cyberMaroon, fg = cyberBlue, activebackground = cyberBlack, activeforeground = cyberRed, command=add_item).pack(side=tk.LEFT, padx=5)
-    tk.Button(button_frame, text="Remove", bg = cyberMaroon, fg = cyberBlue, activebackground = cyberBlack, activeforeground = cyberRed, command=remove_item).pack(side=tk.LEFT, padx=5)
+    tk.Button(button_frame, text="Add", command=add_item).pack(side=tk.LEFT, padx=5)
+    tk.Button(button_frame, text="Remove", command=remove_item).pack(side=tk.LEFT, padx=5)
     
     # Bind Enter key to add function
     entry.bind('<Return>', lambda event: add_item())
