@@ -24,14 +24,14 @@ import tkinter as tk
 from tkinter import *
 from tkinter import messagebox
 
-# These are the colors that I plan on using for my UI design. I want to try and mimic the 2077 menu UI coloration. Maybe I will try to add some dynamic elements when I get to that point.
+# Primary color palette?
 cyberBlack = "#000000"
 cyberRed = "#c5003c"
 cyberMaroon = "#880425"
 cyberYellow = "#FFD700"
 cyberBlue = "#00aeff"
 
-# I might try a different color pallete
+# Secondary color palette
 yellow = "#efffa0"
 skyBlue = "#a4e8eb"
 blue = "#80b2b4"
