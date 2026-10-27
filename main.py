@@ -1,3 +1,4 @@
+# The documentation
 """
     So, if I remember correctly, everything in a tkinter window is displayed via a label.
     I do not remember exactly how, but I know in order to use functions that update they need to be passed to a label in a really stupid way.
@@ -18,7 +19,7 @@
     For now I have no idea as to how to do that for now.
 """
 
-
+# Libraries needed for this UI application
 import tkinter as tk
 from tkinter import *
 from tkinter import messagebox
@@ -30,6 +31,7 @@ cyberMaroon = "#880425"
 cyberYellow = "#FFD700"
 cyberBlue = "#00aeff"
 
+# The main function 
 def generate_listbox_with_input():
 
     def display_text():
