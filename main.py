@@ -10,7 +10,7 @@
 
 
 import tkinter as tk
-from tkinter import Entry, Listbox, ttk
+from tkinter import *
 
 cyberBlack = "#000000"
 cyberRed = "#c5003c"
@@ -27,6 +27,9 @@ def display_text():
 
 root = tk.Tk()
 
+# create listbox object
+listbox = Listbox(root, height = 10, width = 15, bg = "grey",activestyle = 'dotbox', font = "Helvetica",fg = "yellow")
+
 entry = tk.Entry(root, width=30)
 entry.pack(pady=10)
 
@@ -35,6 +38,18 @@ submit_button.pack(pady=5)
 
 output_label = tk.Label(root, text="", font=("Arial", 12))
 output_label.pack(pady=20)
+
+# Define a label for the list.  
+label = Label(root, text = " FOOD ITEMS") 
+
+listbox.insert(1, "Nachos")
+listbox.insert(2, "Sandwich")
+listbox.insert(3, "Burger")
+listbox.insert(4, "Pizza")
+listbox.insert(5, "Burrito")
+
+label.pack()
+listbox.pack()
 
 root.title("To Do List")
 root.geometry("900x500")
