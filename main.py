@@ -27,19 +27,14 @@ def display_text():
 
 root = tk.Tk()
 
-# create listbox object
 listbox = Listbox(root, height = 10, width = 15, bg = "grey",activestyle = 'dotbox', font = "Helvetica",fg = "yellow")
 
 entry = tk.Entry(root, width=30)
-entry.pack(pady=10)
 
 submit_button = tk.Button(root, text="Display Text", command=display_text, bg = cyberMaroon, fg = cyberBlue, activebackground = cyberYellow, activeforeground = cyberBlue) 
-submit_button.pack(pady=5)
 
 output_label = tk.Label(root, text="", font=("Arial", 12))
-output_label.pack(pady=20)
-
-# Define a label for the list.  
+ 
 label = Label(root, text = " FOOD ITEMS") 
 
 listbox.insert(1, "Nachos")
@@ -48,6 +43,9 @@ listbox.insert(3, "Burger")
 listbox.insert(4, "Pizza")
 listbox.insert(5, "Burrito")
 
+entry.pack(pady=10)
+submit_button.pack(pady=5)
+output_label.pack(pady=20)
 label.pack()
 listbox.pack()
 
