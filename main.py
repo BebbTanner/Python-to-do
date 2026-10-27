@@ -54,17 +54,18 @@ def generate_listbox_with_input():
     root.configure(bg=cyberBlack)
     
     # Frame for input controls
-    input_frame = tk.Frame(root)
+    input_frame = tk.Frame(root, bg = cyberYellow)
     input_frame.pack(pady=10)
     
-    tk.Label(input_frame, text="Add Item:").pack(side=tk.LEFT)
+    tk.Label(input_frame, text="Add Item:", bg = cyberYellow).pack(side=tk.LEFT)
     entry = tk.Entry(input_frame, width=20)
     entry.pack(side=tk.LEFT, padx=5)
     
     # Create listbox with scrollbar
     listbox_frame = tk.Frame(root)
     listbox_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
-    
+
+    # Scrollbar attributes?
     scrollbar = tk.Scrollbar(listbox_frame)
     listbox = tk.Listbox(listbox_frame, yscrollcommand=scrollbar.set)
     scrollbar.config(command=listbox.yview)
@@ -89,11 +90,11 @@ def generate_listbox_with_input():
             messagebox.showwarning("Warning", "Please select an item to remove!")
     
     # button_frame is the box that the add and remove buttons will be placed in. I have managed to set its background color to cyberRed.
-    button_frame = tk.Frame(root, bg = cyberRed)
+    button_frame = tk.Frame(root, bg = cyberYellow)
     button_frame.pack(pady=5)
     
-    tk.Button(button_frame, text="Add", bg = cyberMaroon, fg = cyberBlue, activebackground = cyberYellow, activeforeground = cyberBlue, command=add_item).pack(side=tk.LEFT, padx=5)
-    tk.Button(button_frame, text="Remove", bg = cyberMaroon, fg = cyberBlue, activebackground = cyberYellow, activeforeground = cyberBlue, command=remove_item).pack(side=tk.LEFT, padx=5)
+    tk.Button(button_frame, text="Add", bg = cyberMaroon, fg = cyberBlue, activebackground = cyberBlack, activeforeground = cyberRed, command=add_item).pack(side=tk.LEFT, padx=5)
+    tk.Button(button_frame, text="Remove", bg = cyberMaroon, fg = cyberBlue, activebackground = cyberBlack, activeforeground = cyberRed, command=remove_item).pack(side=tk.LEFT, padx=5)
     
     # Bind Enter key to add function
     entry.bind('<Return>', lambda event: add_item())
