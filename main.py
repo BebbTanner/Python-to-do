@@ -88,8 +88,8 @@ def generate_listbox_with_input():
         except IndexError:
             messagebox.showwarning("Warning", "Please select an item to remove!")
     
-    # Buttons
-    button_frame = tk.Frame(root)
+    # button_frame is the box that the add and remove buttons will be placed in. I have managed to set its background color to cyberRed.
+    button_frame = tk.Frame(root, bg = cyberRed)
     button_frame.pack(pady=5)
     
     tk.Button(button_frame, text="Add", bg = cyberMaroon, fg = cyberBlue, activebackground = cyberYellow, activeforeground = cyberBlue, command=add_item).pack(side=tk.LEFT, padx=5)
