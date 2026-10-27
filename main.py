@@ -32,7 +32,7 @@ root.geometry("400x200")
 entry = tk.Entry(root, width=30)
 entry.pack(pady=10)
 
-submit_button = tk.Button(root, text="Display Text", command=display_text)
+submit_button = tk.Button(root, text="Display Text", command=display_text, bg = cyberMaroon, fg = cyberBlue, activebackground = cyberYellow, activeforeground = cyberBlue) 
 submit_button.pack(pady=5)
 
 output_label = tk.Label(root, text="", font=("Arial", 12))
