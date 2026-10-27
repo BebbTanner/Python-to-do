@@ -52,22 +52,24 @@ def generate_listbox_with_input():
     # Here is the sizing of the window and other configurations. 
     root.title("To Do List")
     root.geometry("900x500")
+    # Place window is kinda hot fucking garbage. It does NOT center that shit correctly.
     root.eval('tk::PlaceWindow . center')
     root.configure(bg = lightGray)
     
-    # Frame for input controls
+    # This is the frame that the input controls are nested it. 
     input_frame = tk.Frame(root, bg = skyBlue)
     input_frame.pack(pady=10)
-    
+
+    # This is the label for the Add item attribute. This should be the one that is directly next to the entry field. 
     tk.Label(input_frame, text="Add Item:", bg = skyBlue).pack(side=tk.LEFT)
     entry = tk.Entry(input_frame, width=20, bg = yellow)
     entry.pack(side=tk.LEFT, padx=5)
     
-    # Create listbox with scrollbar
+    # This is that got damned listbox attribute. this is kind of like a table that you put widgets on. That makes sense in my head. 
     listbox_frame = tk.Frame(root)
     listbox_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 
-    # Scrollbar attributes?
+    # This is the settings for the scrollbar widget. I would like to eventually play around with this to see if I can change it's styling.
     scrollbar = tk.Scrollbar(listbox_frame)
     listbox = tk.Listbox(listbox_frame, yscrollcommand=scrollbar.set)
     scrollbar.config(command=listbox.yview)
