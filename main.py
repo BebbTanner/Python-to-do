@@ -31,6 +31,13 @@ cyberMaroon = "#880425"
 cyberYellow = "#FFD700"
 cyberBlue = "#00aeff"
 
+# I might try a different color pallete
+yellow = "#efffa0"
+skyBlue = "#a4e8eb"
+blue = "#80b2b4"
+lightGray = "#bbbbbb"
+gray = "#aaaaaa"
+
 # The main function 
 def generate_listbox_with_input():
 
