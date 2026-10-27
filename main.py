@@ -95,5 +95,6 @@ def generate_listbox_with_input():
     
     root.mainloop()
 
+# I still have no got damned idea as to what the fuck this does.
 if __name__ == "__main__":
     generate_listbox_with_input()
