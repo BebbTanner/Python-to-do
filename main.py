@@ -6,6 +6,10 @@
     What all am I looking to put on the window?
     I think that I want to create some type of to do list.
     I would then like to be able to add some type of function that would generate this as pdf report.
+
+    Lore updadate:
+    I have no idea where the fuck I am going with this. 
+    I am literally just throwing shit at the wall and hoping that something sticks on gah frfr.
 """
 
 
