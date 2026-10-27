@@ -10,6 +10,9 @@
     Lore updadate:
     I have no idea where the fuck I am going with this. 
     I am literally just throwing shit at the wall and hoping that something sticks on gah frfr.
+
+    Okay, so the functionality of the list is there.
+    So now that this has been added I would now like to see if I can find a way to generate a pdf esk report to save to a file.
 """
 
 
