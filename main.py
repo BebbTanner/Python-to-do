@@ -13,6 +13,9 @@
 
     Okay, so the functionality of the list is there.
     So now that this has been added I would now like to see if I can find a way to generate a pdf esk report to save to a file.
+
+    Okay, so I want to change the background color of the add and remove window. 
+    For now I have no idea as to how to do that for now.
 """
 
 
